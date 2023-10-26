@@ -12,7 +12,6 @@ import { HeroService } from '../hero.service';
 })
 export class HeroDetailComponent {
   public hero!: Hero;
-  id!: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,7 +24,8 @@ export class HeroDetailComponent {
   }
 
   getHero(): void {
-    this.id = Number( this.route.snapshot.paramMap.get( 'id' ) );
+    const id = Number( this.route.snapshot.paramMap.get( 'id' ) );
+    this.heroService.getHero( id ).subscribe( hero => this.hero = hero );
   }
 
   goBack(): void {
