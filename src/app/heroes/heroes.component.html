@@ -14,10 +14,10 @@
 
 
 <div *ngIf="selectedHero">
-  <h2>{{ hero.name }} Details</h2>
+  <h2>{{ selectedHero.name }} Details</h2>
 
-  <div><span class="badge">id: </span>{{ hero.id }}</div>
-  <div><span class="name">name: </span>{{ hero.name }}</div>
+  <div><span class="badge">id: </span>{{ selectedHero.id }}</div>
+  <div><span class="name">name: </span>{{ selectedHero.name }}</div>
 
   <!-- <pre>{{ hero | json }}</pre> -->
   <label for="name">Hero name: </label>
