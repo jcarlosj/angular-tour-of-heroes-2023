@@ -9,10 +9,7 @@ import { HEROES } from '../data/mock-heroes';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent {
-  hero: Hero = {
-    id: 1,
-    name: 'Superman'
-  };
+
 
   public heroes = HEROES;
 
