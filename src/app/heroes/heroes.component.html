@@ -4,3 +4,8 @@
 <div><span>name: </span>{{ hero.name }}</div>
 
 <!-- <pre>{{ hero | json }}</pre> -->
+
+<div>
+  <label for="name">Hero name: </label>
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
