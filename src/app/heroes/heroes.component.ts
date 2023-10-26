@@ -15,4 +15,10 @@ export class HeroesComponent {
   };
 
   public heroes = HEROES;
+
+  public selectedHero!: Hero;
+
+  onSelect( hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
